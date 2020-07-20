@@ -14,98 +14,100 @@
     <a href="" class="main-header-logo"><img src="../static/img/iba-tech-logo-white.svg"
                                                   alt="IBA Tech Academy"></a>
 </header>
-<main class="full-url-bg-container">
-    <table class="full-url-table">
-        <tbody>
-        <thead>
-        <tr>
-            <th>Creation date</th>
-            <th>Short URL</th>
-            <th>Full URL</th>
-            <th>Visit count</th>
-            <th>Expiration date</th>
-            <th>Active</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>21.06.2020 - 16:30</td>
-            <td>
-                <div class="foo-short">
-                    <a>
-                        shortUrl
-                    </a>
-                </div>
-            </td>
-            <td>
-                <div class="foo">
-                    <a>
-                        there will be long url like https://www.google.com/search?sxsrf=ALeKk0106pEoahRa2PRdgk7NvfrPN8eRMg%3A1595016449918&ei=AQUSX4ezN--ajLsP5N6j2AI&q=adsfdf&oq=adsfdf&gs_lcp=CgZwc3ktYWIQA1CpC1jBC2DgDmgAcAB4AIABAIgBAJIBAJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjHt6Gni9XqAhVvDWMBHWTvCCsQ4dUDCAw&uact=5maybeevenlong
-                    </a>
-                </div>
-            </td>
-            <td>visit count
-                <form action="/" method="post">
-                    <input type="image" src="../static/img/full-url-arrow.png" alt="arrow">
-                </form>
-            </td>
-            <td>21.06.2020
-            </td>
-            <td>
-                <div>
-                    <div>
-                        <form action="/active" method="post" id="form">
-                            <label class="switch">
-                                <input type="hidden" name="shortUrl">
-                                <input type="checkbox" id="idactive" name="myRadio">
-                                <span class="slider"></span>
-                            </label>
-                        </form>
-                        <script type="text/javascript">
-                            $(function () {
-                                $('#idactive').on('change', function () {
-                                    $('#form').submit();
-                                });
-                            });
-                        </script>
+<div class="main-class" mainClass>
+    <div class="">
+        <table class="full-url-table">
+            <tbody>
+            <thead>
+            <tr>
+                <th>Creation date</th>
+                <th>Short URL</th>
+                <th>Full URL</th>
+                <th>Visit count</th>
+                <th>Expiration date</th>
+                <th>Active</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>21.06.2020 - 16:30</td>
+                <td>
+                    <div class="foo-short">
+                        <a>
+                            shortUrl
+                        </a>
                     </div>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <form method="post" action="">
-        <label>Change expiration date to:</label>
-        <input type="hidden" name="shortUrl">
-        <input type="date" name="date" value="01/31/2020">
-        <input type="submit">
-    </form>
-    <table>
-        <tr>
-            <th>visit no</th>
-            <th>visit date</th>
-            <th>country<th>
-            <th>city<th>
-            <th>ip address<th>
-            <th>operation system<th>
-            <th>browser<th>
-            <th>browser version<th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>21.06.2020 - 21:36</td>
-            <td>Azerbaycan</td>
-            <td>Baki</td>
-            <td>123.123.123.123</td>
-            <td>windows 10</td>
-            <td>chrome 8</td>
-            <td>81.123.32</td>
-        </tr>
-    </table>
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a>pagination page numbers will be there like 1 2 3</a></li>
-    </ul>
-    <a href="" class="modal-main-btn">back to main</a>
-</main>
+                </td>
+                <td>
+                    <div class="foo">
+                        <a>
+                            there will be long url like https://www.google.com/search?sxsrf=ALeKk0106pEoahRa2PRdgk7NvfrPN8eRMg%3A1595016449918&ei=AQUSX4ezN--ajLsP5N6j2AI&q=adsfdf&oq=adsfdf&gs_lcp=CgZwc3ktYWIQA1CpC1jBC2DgDmgAcAB4AIABAIgBAJIBAJgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjHt6Gni9XqAhVvDWMBHWTvCCsQ4dUDCAw&uact=5maybeevenlong
+                        </a>
+                    </div>
+                </td>
+                <td>visit count
+                    <form action="/" method="post">
+                        <input type="image" src="../static/img/full-url-arrow.png" alt="arrow">
+                    </form>
+                </td>
+                <td>21.06.2020
+                </td>
+                <td>
+                    <div>
+                        <div>
+                            <form action="/active" method="post" id="form">
+                                <label class="switch">
+                                    <input type="hidden" name="shortUrl">
+                                    <input type="checkbox" id="idactive" name="myRadio">
+                                    <span class="slider"></span>
+                                </label>
+                            </form>
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#idactive').on('change', function () {
+                                        $('#form').submit();
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <form method="post" action="">
+            <label>Change expiration date to:</label>
+            <input type="hidden" name="shortUrl">
+            <input type="date" name="date" value="01/31/2020">
+            <input type="submit">
+        </form>
+        <table class="table-address">
+            <tr>
+                <th>visit no</th>
+                <th>visit date</th>
+                <th>country<th>
+                <th>city<th>
+                <th>ip address<th>
+                <th>operation system<th>
+                <th>browser<th>
+                <th>browser version<th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>21.06.2020 - 21:36</td>
+                <td>Azerbaycan</td>
+                <td>Baki</td>
+                <td>123.123.123.123</td>
+                <td>windows 10</td>
+                <td>chrome 8</td>
+                <td>81.123.32</td>
+            </tr>
+        </table>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a>pagination page numbers will be there like 1 2 3</a></li>
+        </ul>
+        <a href="" class="modal-main-btn">back to main</a>
+    </div>
+</div>
 </body>
 </html>
